@@ -1,0 +1,128 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:white;
+    }
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: left;    
+}
+
+header .logo{
+    width: 140px;
+    height: 75px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:rgb(223, 223, 223);
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+header nav a:hover{
+    color:rgb(177, 177, 177);
+    transition: .2s;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 10px;
+    background:   url('/img/house-of-cards-title-still.jpg');
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20%;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao-play{
+    background-color: #FFFFFF;
+    border:none;
+    color: black;
+
+    padding:10px 25px;
+    margin-right: 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 100px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+.botao-info{
+    background-color: #8a8a8bb3;
+    border:none;
+    color: white;
+
+    padding:10px 25px;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 100px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.botao-play:hover{
+    background-color:rgb(206, 205, 205);
+    color:black;
+}
+.botao-info:hover{
+    background-color:rgba(166, 166, 167, 0.534);
+    color: white;
+}
+
+.botao i{
+    margin-right: px;
+}
+
+.container{
+    margin-left: 60px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:10px;
+}
